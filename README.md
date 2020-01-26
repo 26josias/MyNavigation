@@ -1,4 +1,4 @@
-# MyNavigation
+# LiveData with Navigation component
 
 A small example of how to use LiveData with Navigation component of android jetpack
 
