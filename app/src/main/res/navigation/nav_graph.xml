@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.alexurangareyes.mynavigation.ui.home.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.alexurangareyes.mynavigation.ui.settings.SettingsFragment"
+        android:label="settings_fragment"
+        tools:layout="@layout/settings_fragment" >
+        <action
+            android:id="@+id/action_settingsFragment_to_wifiFragment"
+            app:destination="@id/wifiFragment" />
+        <!--app:popUpTo="@+id/settingsFragment" app:popUpToInclusive="true" -->
+    </fragment>
+    <fragment
+        android:id="@+id/wifiFragment"
+        android:name="com.alexurangareyes.mynavigation.ui.wifi.WifiFragment"
+        android:label="wifi_fragment"
+        tools:layout="@layout/wifi_fragment" />
+</navigation>
